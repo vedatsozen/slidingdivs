@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCROLLINTOVIEW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="butonlar">
+    <button id="btn1">Section 1</button>
+    <button id="btn2">Section 2</button>
+    <button id="btn3">Section 3</button>
+    <button id="btn4">Section 4</button>
+    <button id="btn5">Section 5</button>
+</div>
+
+<div id="sections">
+    <div id="section1">
+        <H1>SECTION1</H1>
+    </div>
+    <div id="section2">
+        <h1>SECTION2</h1>
+    </div>
+    <div id="section3">
+        <h1>SECTION3</h1>
+    </div>
+    <div id="section4">
+        <h1>SECTION4</h1>
+    </div>
+    <div id="section5">
+        <h1>SECTION5</h1>
+    </div>
+</div>
+</body>
+
+<script>
+
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var btn3 = document.getElementById("btn3");
+var btn4 = document.getElementById("btn4");
+var btn5 = document.getElementById("btn5");
+
+var section1 = document.getElementById("section1");
+var section2 = document.getElementById("section2");
+var section3 = document.getElementById("section3");
+var section4 = document.getElementById("section4");
+var section5 = document.getElementById("section5");
+
+
+
+btn1.addEventListener("click", function() {
+section1.scrollIntoView({behavior:"smooth"});
+});
+
+btn2.addEventListener("click", function() {
+section2.scrollIntoView({behavior:"smooth"});
+})
+
+btn3.addEventListener("click", function() {
+section3.scrollIntoView({behavior:"smooth"});
+})
+
+btn4.addEventListener("click", function() {
+section4.scrollIntoView({behavior:"smooth"});
+})
+
+btn5.addEventListener("click", function() {
+section5.scrollIntoView({behavior:"smooth"});
+})
+
+
+</script>
+
+
+</html>
